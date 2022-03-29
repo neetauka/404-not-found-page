@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(231, 247, 231);
+    height: 100%;
+    font-family: 'poppins';
+    box-sizing: border-box;
+    margin: 50px 50px 0 0;
+    position: relative;
+}
+
+header span {
+    font-size: 20px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    color: rgb(15, 15, 43);
+    margin-left: 50px;
+}
+
+.wrapper {
+    overflow: auto;
+}
+
+.grid-container {
+    /* box-sizing: border-box;
+    width: 80%;
+    padding: 50px; */
+    position: relative;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid-container img {
+    height: 350px;
+    width: 350px;
+}
+
+.text-wrapper {
+    /* text-align: justify; */
+    width: 370px;
+    margin-top: 20px;
+    padding: 10px;
+    margin-left: 80px;
+}
+
+.text-wrapper h1 {
+    font-size: 40px;
+    padding-bottom: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.8;
+    color: rgb(15, 15, 43);
+}
+
+.text-wrapper p {
+    font-weight: 280;
+    line-height: 1.8;
+    font-size: 18px;
+    color: rgb(15, 15, 43);
+}
+
+button {
+    margin-top: 20px;
+    width: 110px;
+    font-size: 8px;
+    background-color: rgb(15, 15, 43);
+    border-radius: 5px;
+    border: none;
+    color: rgb(231, 247, 231);
+    padding: 12px;
+}
+
+Button:hover {
+    cursor: pointer;
+    background-color: rgb(203, 233, 37);
+    color: rgb(15, 15, 43);
+}
+
+footer {
+    text-align: center;
+    background: linear-gradient(to right, rgb(231, 247, 231), rgb(231, 247, 231), rgb(203, 233, 37), rgb(203, 233, 37), rgb(231, 247, 231), rgb(231, 247, 231));
+    height: 20px;
+    padding: 10px;
+    color: rgb(15, 15, 43);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (min-height: 680px), screen and (orientation: portrait) {
+    body {
+        display: flex;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-rows: auto auto auto;
+    }
+
+    header span {
+        font-size: 20px;
+    }
+
+    .grid-container img {
+        height: 250px;
+        width: 250px;
+        position: relative;
+        left: 100px;
+    }
+
+    .text-wrapper {
+        /* text-align: justify; */
+        width: 270px;
+        margin-top: 20px;
+        padding: 10px;
+        margin-left: 80px;
+    }
+}
